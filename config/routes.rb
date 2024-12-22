@@ -3,4 +3,6 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations'
   }
+
+  get 'member_details', to: 'members#index'
 end
