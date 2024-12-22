@@ -5,4 +5,9 @@ Rails.application.routes.draw do
   }
 
   get 'member_details', to: 'members#index'
+  namespace :api do
+    namespace :v1 do
+      resources :companies
+    end
+  end
 end
